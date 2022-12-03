@@ -43,29 +43,29 @@ function CreatePost() {
       
   return (
     
-        <section class="contacts">
+        <section className="contacts">
             <div className=" headings text-center">
                 <h1 >Create Post</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit obcaecati perspiciatis! &#128512;.</p>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
                         <form action="" enctype="multipart/form-data"> 
-                            <div class="form-group">
-                                <input type="text" ref = {name} class="form-control" placeholder="Enter Name" autocomplete = "off" required id="username"/>
+                            <div className="form-group">
+                                <input type="text" ref = {name} className="form-control" placeholder="Enter Name" autocomplete = "off" required id="username"/>
                             </div>
-                            <div class="form-group">
-                                <input type="email" ref = {email} class="form-control" required autocomplete = "off" placeholder="Enter email" id="email"/>
+                            <div className="form-group">
+                                <input type="email" ref = {email} className="form-control" required autocomplete = "off" placeholder="Enter email" id="email"/>
                             </div>
-                            <div class="form-group">   
-                                <input type="file" ref = {image} accept="image/png, image/gif, image/jpeg" class="form-control" required autocomplete = "off" placeholder="Upload Image..." id="image"/>
+                            <div className="form-group">   
+                                <input type="file" ref = {image} accept="image/png, image/gif, image/jpeg" className="form-control" required autocomplete = "off" placeholder="Upload Image..." id="image"/>
                             </div>
-                            <div class="form-group">
-                                <textarea class="form-control" ref = {message} rows="4" placeholder="Enter your Message..." id="comment"></textarea>
+                            <div className="form-group">
+                                <textarea className="form-control" ref = {message} rows="4" placeholder="Enter your Message..." id="comment"></textarea>
                             </div>
-                            <div class="form-buttons d-flex justify-content-center">
-                                <button type="submit" onClick = {submitPost} class="btn btn-primary">Submit</button>
+                            <div className="form-buttons d-flex justify-content-center">
+                                <button type="submit" onClick = {submitPost} className="btn btn-primary">Submit</button>
                             </div>
                         </form>
                     </div>

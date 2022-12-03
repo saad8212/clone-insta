@@ -1,33 +1,26 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHome,faUser,faInstagram,faPlus, faMessage} from "@fortawesome/free-solid-svg-icons";
 
+
 function Nav() {
   return (
-    <div className='top'>
-        <div className="top-items">
-            <div className="logo-area logo">
-                <a href="#">
+    <div className='top fixed-top'>
+        <nav class="navbar sticky-top fixed-top navbar-expand-lg navbar-light bg-light">
+            <div className="container">
+                <a class="navbar-brand" href="#">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="logo" width={103}/>
                 </a>
-            </div>
-            <div class="acct-actions">
-                <div class="actions">
-                    
-                        <FontAwesomeIcon icon = {faHome} className="icons"/>    
-                    
-                    
-                        <FontAwesomeIcon icon = {faMessage} className="icons"/ >
-                    
-                    
-                       <FontAwesomeIcon icon = {faPlus} className="icons"/>
-                     
+                <form className="form-inline">
+                    <input className="form-control ml-sm-5" type="search" placeholder="Search" aria-label="Search"/>
+                    <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div className = "user-profile">
+                    <a class="navbar-brand" href="#"> 
+                        <img className="rounded-circle" src="https://images.unsplash.com/photo-1567324216289-97cc4134f626?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="logo" width={40} height = {35}/>
+                    </a>
                 </div>
             </div>
-            <div className="user-update">
-                <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt = ""/>
-                <h3>Saadi</h3>
-            </div>
-        </div>
+        </nav>
     </div>
   )
 }
