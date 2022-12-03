@@ -10,7 +10,6 @@ export const getStaticProps  = async ()=>{
   return { props: { data } }
 }
 export default function Home({data}) {
-  console.log(data);
   return (
     <div>
       <Head>

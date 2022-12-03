@@ -1,7 +1,7 @@
 
 import Card from './card'
 import React, { useState,useEffect } from 'react'; 
-import Link from 'next/link';
+
 
 function Posts({data}) {
 
@@ -21,9 +21,7 @@ function Posts({data}) {
           post.map(res =>{
             return (
               <>
-              <Link href ={`/details/${res.id}`} key = {res.id}>
                 <Card data = {res}/>
-              </Link>  
               </>
             )
           })
