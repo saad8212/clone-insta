@@ -30,9 +30,6 @@ function Posts({data}) {
           name:'Morgan',
       }
       ]
-      status.map(res =>{
-        console.log(res.img);
-      })
   return (
     <>
       <span style={{width:"50%"}} className = "posts"> 
