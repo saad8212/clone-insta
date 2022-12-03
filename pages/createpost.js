@@ -1,3 +1,4 @@
+import { match } from 'assert';
 import React,{useRef, useState} from 'react'  
 function CreatePost() {
     const [data,setData] = useState([]);
@@ -8,10 +9,14 @@ function CreatePost() {
     const submitPost = (e) =>{
         e.preventDefault();
         console.log(name.current.value, image.current.files[0]); 
-        setData([name.current.value, image.current.files[0], 
+        setData([...data, name.current.value, image.current.files[0], 
             email.current.value, message.current.value]);
+            let postData = [{
+                id:Math.ceil(Math.random()*1000),
+                
+            }]
             console.log('data',data);
-        
+        localStorage.setItem('data', data);
         fetch('https://dummyjson.com/users/add', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -33,8 +38,6 @@ function CreatePost() {
                     email:resp.email,
                     age:43
                 }
-                    localStorage.setItem('data',JSON.stringify(data));
-                    console.log(resp);
             });     
     }
       

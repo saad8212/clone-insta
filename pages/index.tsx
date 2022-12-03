@@ -2,13 +2,15 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Nav from '../components/Layout/nav'
 import Main from '../components/main'
-export const getStaticProps = async ()=>{
-  debugger;
-  const response = await fetch(`https://dummyjson.com/users/?skip=90&limit=20`)
+
+export const getStaticProps  = async ()=>{
+  const response = await fetch(`https://api.unsplash.com/photos?client_id=004HW6PAtX4glBh_O7ctSVI1762nIkQqNjNNbJgBLqc`)
   const data = await response.json(); 
+  console.log(data, response);
   return { props: { data } }
 }
 export default function Home({data}) {
+  console.log(data);
   return (
     <div>
       <Head>
