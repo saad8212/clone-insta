@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHome,faUser,faInstagram,faPlus, faMessage} from "@fortawesome/free-solid-svg-icons";
-
+import Link from "next/link";
 
 function Nav() {
   return (
@@ -15,9 +15,9 @@ function Nav() {
                     <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
                 <div className = "user-profile">
-                    <a class="navbar-brand" href="#"> 
+                    <Link class="navbar-brand" href="/profile"> 
                         <img className="rounded-circle" src="https://images.unsplash.com/photo-1567324216289-97cc4134f626?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="logo" width={40} height = {35}/>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </nav>

@@ -9,8 +9,10 @@ function Card({data}) {
     <div className='sections'>
       <div className='cards'>
         <div className = "card-title">
-          <img src = {data.user.profile_image.medium} alt = "user"/>
-          <h4 style = {{fontWeight: 'bold'}}>{data.user.first_name + ' ' + data.user.last_name}</h4>
+            <Link href= {`/user/${data.user.username}`} key= {data.user.username}>
+              <img src = {data.user.profile_image.medium} alt = "user" className='post-user'/>
+            </Link>
+          <h4 style = {{fontWeight: 'bold'}}>{data.user.first_name} {data.user.last_name}</h4>
         </div>
         <div className = "card-img">
           <Link href ={`/details/${data.id}`} key = {data.id}>

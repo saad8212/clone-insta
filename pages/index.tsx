@@ -4,7 +4,7 @@ import Nav from '../components/Layout/nav'
 import Main from '../components/main'
 
 export const getStaticProps  = async ()=>{
-  const response = await fetch(`https://api.unsplash.com/photos?client_id=004HW6PAtX4glBh_O7ctSVI1762nIkQqNjNNbJgBLqc`)
+  const response = await fetch(`https://api.unsplash.com/photos/random?count=6&client_id=9Sjn9OGQl4ykQETozpGZxvVyRwci9MqYWJuf3RMEj-w`)
   const data = await response.json(); 
   console.log(data, response);
   return { props: { data } }

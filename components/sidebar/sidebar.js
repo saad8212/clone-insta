@@ -1,4 +1,5 @@
 import { AiOutlineHeart } from 'react-icons/ai'
+import Link from 'next/link'
 import { MdOutlineModeComment } from 'react-icons/md'
 import { RiSendPlaneLine } from 'react-icons/ri'
 import { FiSave } from 'react-icons/fi'
@@ -23,32 +24,30 @@ function Sidebar() {
             </svg>
             <div className='pb-3 pl-3 d-flex align-items-center'>
                 <IoMdHome className='fs-2 me-3' />
-                <a className='text-decoration-none text-dark fs-4' href='#'>Home</a>
+                <Link className='text-decoration-none text-dark fs-4' href='/'>Home</Link>
             </div>
             <div className='pb-3 d-flex align-items-center'>
             <CiSearch className='fs-2 me-3' />
-            <a className='text-decoration-none text-dark fs-4' href='#'>Search</a>
+            <Link className='text-decoration-none text-dark fs-4' href='/'>Search</Link>
             </div>
             <div className='pb-3 d-flex align-items-center'>
                 <MdOutlineExplore className='fs-2 me-3' />
-                <a className='text-decoration-none text-dark fs-4' href='#'>Explore</a>
+                <Link className='text-decoration-none text-dark fs-4' href='/'>Explore</Link>
             </div>
             <div className='pb-3 d-flex align-items-center'>
-            <BiMessageRoundedDetail className='fs-2 me-3' /><a className='text-decoration-none text-dark fs-4' href='#'>Messages</a>
+            <BiMessageRoundedDetail className='fs-2 me-3' /><Link className='text-decoration-none text-dark fs-4' href='/messages'>Messages</Link>
             </div>
             <div className='pb-3 d-flex align-items-center'>
                 <IoMdHeartEmpty className='fs-2 me-3' />
-                <a className='text-decoration-none text-dark fs-4' href='#'>Notification</a>
+                <Link className='text-decoration-none text-dark fs-4' href='/'>Notification</Link>
             </div>
             <div className='pb-3 d-flex align-items-center'>
-                <BiMessageSquareAdd className='fs-2 me-3' /><a className='text-decoration-none text-dark fs-4' href='#'>Create</a>
+                <BiMessageSquareAdd className='fs-2 me-3' /><Link className='text-decoration-none text-dark fs-4' href='/createpost'>Create</Link>
             </div>
             <div className='pb-3 d-flex align-items-center'>
-                <CgProfile className='fs-2 me-3' /><a className='text-decoration-none text-dark fs-4' href='#'>Profile</a>
+                <CgProfile className='fs-2 me-3' /><Link className='text-decoration-none text-dark fs-4' href='/profile'>Profile</Link>
             </div>
-            <div className='pb-3 d-flex align-items-center'>
-                <AiOutlineMenu className='fs-2 me-3' /><a className='text-decoration-none text-dark fs-4' href='#'>More</a>
-            </div>
+             
         </div>
     </div>
     

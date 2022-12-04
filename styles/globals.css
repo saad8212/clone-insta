@@ -62,19 +62,13 @@ nav {
   height: 66px;
   width: 66px;
   border-radius: 50%;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+ 
 }
 .pix {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+ 
 }
 .main { 
   width: 100%;
@@ -102,10 +96,7 @@ nav {
   width:20%;
   height:40px;
   border:2px solid brown;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+ 
 }
 .suggestion-data {
   padding:5px;
@@ -139,12 +130,8 @@ nav {
   border-radius: 4px;
   display: block;
   margin-bottom:30px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding-bottom:30px;
 }
 .cards {
@@ -161,15 +148,11 @@ nav {
   justify-content: space-between;
   padding:0px 30px 0 30px
 }
-.card-title img{
-  width: 10%;
+.post-user{
+  width: 100%;
   height: 40px;
   border-radius: 50%;
   border: 1px solid #cc2366;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
 }
 .card-img {
   height:70%;
@@ -349,4 +332,110 @@ border: 1px solid #ff4800;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.messages{
+  margin-top:60px !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; 
+  width:71% !important;
+  height:84vh !important; 
+  margin-left:25%; 
+  display: flex;
+  flex-direction: row;
+  padding-bottom:20px;
+}
+.recieveMsg{
+  width: 40%;
+  border: 1px solid #dbdbdb;
+  height:84vh;
+
+ 
+}
+.sendMsg{
+  width: 60%;
+  border: 1px solid #dbdbdb;
+  border-left: none; 
+  height:84vh;
+ 
+}
+.recieveMsgHeader{
+  width: 100%; 
+  height:10vh !important; 
+  border-bottom: 1px solid #dbdbdb; 
+}
+ .sendMsgHeader{
+  width: 100%; 
+  height:10vh !important; 
+  border-bottom: 1px solid #dbdbdb; 
+ }
+ .msg{
+  background-color: #f1f1f1;
+  height:10vh;
+  margin-top: 5px;
+  padding-left: 10px;
+  font-size: 9px;
+ }
+
+ 
+.has-search .form-control {
+  padding-left: 2.375rem;
+  margin-top: 30px !important;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 37%;
+  height: 3.375rem;
+  line-height: 2.375rem;
+  text-align: left;
+  pointer-events: none;
+  color: #aaa;
+}
+.has-search .form-control {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  height:3.2rem; 
+
+  padding-left: 10% !important;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+ .profile-data{
+  width: 100%;
+  height:30vh;
+  border-bottom: 1px solid #dbdbdb;
+ }
+ .profile-edit{
+  width: 100%;
+  height:45vh;
+ }
+ .profile_icon{
+    font-size: 80px;
+    color:#c7b1b1; 
+ }
+ /* .profile-list{
+  line-height: 2.5; 
+ } */
+ .profile-list ul li{
+    font-size: 26px;
+    font-weight: 300;
+    padding-right: 20px;
+    line-height: 22px;
+
+ }
+ .card{
+  height:37vh !important;
+ }
+ .card-icon{
+  width:22%;
+  border-radius:50%;
+  border:2px solid black;
+  height:36px;
+  padding-top: 8px;
+  text-align: center;
+  margin-left: 39%;
 }

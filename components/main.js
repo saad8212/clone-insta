@@ -7,7 +7,7 @@ function Main({data}) {
     <div className='main'>
         <Sidebar/>
         <Posts data = {data}/>
-        <Suggestion/>
+        <Suggestion data = {data}/>
        </div>
   )
 }

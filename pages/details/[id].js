@@ -9,14 +9,14 @@ function Details() {
         // declare the data fetching function
         const fetchData = async () => {
             
-          const data = await fetch(`https://api.unsplash.com/photos/${id.query.id}?w=300&client_id=004HW6PAtX4glBh_O7ctSVI1762nIkQqNjNNbJgBLqc`);
+          const data = await fetch(`https://api.unsplash.com/photos/${id.query.id}?w=300&client_id=9Sjn9OGQl4ykQETozpGZxvVyRwci9MqYWJuf3RMEj-w`);
           let jsonData = await data.json();
           console.log(jsonData);
           setApiData(jsonData)
         }
         fetchData()
           .catch(console.error);
-      }, [apiData])  
+      }, [])  
   return (
     <>
       <Nav/>
@@ -49,7 +49,7 @@ function Details() {
               </p>
             </div>
             <div className='col-12 col-md-6 image-display'>
-              <img src = {apiData?.urls?.small} alt = ""/></div>
+              <img src = {apiData?.urls?.regular} alt = ""/></div>
           </div>
         </div>
         

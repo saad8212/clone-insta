@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import Card from './card'
 import React, { useState,useEffect } from 'react'; 
 
